@@ -1,0 +1,6 @@
+neko - cat
+inu - dog
+hito - person
+aka - red
+nichiyoubi - sunday
+getsuyoubi - monday
