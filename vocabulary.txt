@@ -4,3 +4,13 @@ hito - person
 aka - red
 nichiyoubi - sunday
 getsuyoubi - monday
+ue - on
+shiita - under
+mae - in front
+ushiro - behind
+hidari - left
+migi - right
+aasa - morning
+hiru - noon
+yoru - night
+tomodachi - friend
