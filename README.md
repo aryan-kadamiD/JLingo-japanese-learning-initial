@@ -16,9 +16,9 @@ This is a 1-tier application designed for local use, focusing on simplicity and 
 *![img.png](img.png)![img_1.png](img_1.png)*
 
 ## ⚙️ How to Run
-1. Clone the repo: `git clone https://github.com/YourUsername/JLingoApp.git`
+1. Clone the repo: `git clone https://github.com/aryan-kadamiD/JLingo-japanese-learning-initial`
 2. Open the project in IntelliJ IDEA.
-3. Run the `Main.java` file.
+3. Run the `JLingo.java` file.
 
 ---
 Created with ❤️ by [aryan~]
