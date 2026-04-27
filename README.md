@@ -2,7 +2,7 @@
 > A personal Japanese learning, local-first vocabulary manager tool.
 
 ## 🚀 Overview
-I am learning Japanese language and i wanted to organize and retain Japanese vocabulary. While studying the language to quickly store, update, and review new words as I encountered them.
+I am learning Japanese language and I wanted to organize and retain Japanese vocabulary. While studying the language to quickly store, update, and review new words as I encountered them.
 
 This is a 1-tier application designed for local use, focusing on simplicity and effective memorization.
 
@@ -21,4 +21,4 @@ This is a 1-tier application designed for local use, focusing on simplicity and 
 3. Run the `JLingo.java` file.
 
 ---
-Created with ❤️ by [aryan~]
+Created with ❤️ by [Aryan~]
