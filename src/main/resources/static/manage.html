@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JLingo | Manage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app-container">
+    <aside class="sidebar">
+        <img src="/images/JLingoLogo.png" alt="JLingo Logo" class="logo">
+        <nav>
+            <a href="index.html" class="nav-btn">Dictionary</a>
+            <a href="manage.html" class="nav-btn active">Add New Word</a>
+        </nav>
+    </aside>
+
+    <main class="content">
+        <header>
+            <h1>Add New Vocabulary</h1>
+        </header>
+
+        <div class="form-container">
+            <form id="wordForm">
+                <div class="input-group">
+                    <label>Kanji</label>
+                    <input type="text" id="kanji" placeholder="e.g. 猫">
+                </div>
+                <div class="input-group">
+                    <label>Hiragana</label>
+                    <input type="text" id="hiragana" placeholder="e.g. ねこ" required>
+                </div>
+                <div class="input-group">
+                    <label>Romaji</label>
+                    <input type="text" id="romaji" placeholder="e.g. neko" required>
+                </div>
+                <div class="input-group">
+                    <label>English Meaning</label>
+                    <input type="text" id="english" placeholder="e.g. Cat" required>
+                </div>
+                <button type="submit" class="submit-btn">Save to Database</button>
+            </form>
+            <p id="statusMessage"></p>
+        </div>
+    </main>
+</div>
+
+<script>
+    document.getElementById('wordForm').addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const status = document.getElementById('statusMessage');
+
+        const wordData = {
+            kanji: document.getElementById('kanji').value,
+            hiragana: document.getElementById('hiragana').value,
+            romaji: document.getElementById('romaji').value,
+            english: document.getElementById('english').value
+        };
+
+        try {
+            const response = await fetch('/api/words', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(wordData)
+            });
+
+            if (response.ok) {
+                status.innerText = "✅ Word added successfully!";
+                status.style.color = "green";
+                document.getElementById('wordForm').reset();
+            } else {
+                status.innerText = "❌ Server error. Check Java logs.";
+                status.style.color = "red";
+            }
+        } catch (err) {
+            status.innerText = "❌ Connection failed.";
+            status.style.color = "red";
+        }
+    });
+</script>
+</body>
+</html>

@@ -1,16 +1,33 @@
-# Compiled Java files
-*.class
-
-# IntelliJ IDEA project files
-.idea/
-*.iml
-out/
-gen/
-
-# Build tools (if you use them later)
+HELP.md
 target/
-build/
+.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
 
-# System files
-.DS_Store
-Thumbs.db
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/

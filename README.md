@@ -13,7 +13,7 @@ This is a 1-tier application designed for local use, focusing on simplicity and 
 * **Version Control:** Git & GitHub
 
 ## 📸 Demo/ Screenshots
-*![img.png](img.png)![img_1.png](img_1.png)*
+*![img.png](src/main/resources/static/images/img.png)![img_1.png](src/main/resources/static/images/img_1.png)*
 
 ## ⚙️ How to Run
 1. Clone the repo: `git clone https://github.com/aryan-kadamiD/JLingo-japanese-learning-initial`

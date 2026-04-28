@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JLingo | Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app-container">
+    <aside class="sidebar">
+        <img src="/images/JLingoLogo.png" alt="Logo" class="logo">
+        <nav>
+            <a href="index.html" class="nav-btn active">Dictionary</a>
+            <a href="manage.html" class="nav-btn">Add New Word</a>
+        </nav>
+    </aside>
+
+    <main class="content">
+        <header>
+            <h1>Vocabulary Database</h1>
+            <input type="text" id="searchInput" placeholder="Search Kanji, Romaji, or English..." onkeyup="searchTable()">
+        </header>
+
+        <table id="vocabTable">
+            <thead>
+            <tr>
+                <th>Kanji</th>
+                <th>Hiragana</th>
+                <th>Romaji</th>
+                <th>English</th>
+            </tr>
+            </thead>
+            <tbody id="vocabBody">
+            </tbody>
+        </table>
+    </main>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
